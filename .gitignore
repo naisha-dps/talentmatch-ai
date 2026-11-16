@@ -1,0 +1,31 @@
+# Environment variables - NEVER commit secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Streamlit
+.streamlit/
+
+# Data files (user uploads)
+data/uploads/
+
+# Local user authentication database
+data/*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

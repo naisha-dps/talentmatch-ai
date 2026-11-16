@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../assets"
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../graph"
+		},
+		{
+			"path": "../prompts"
+		},
+		{
+			"path": "../utils"
+		},
+		{
+			"path": "../venv"
+		}
+	]
+}
