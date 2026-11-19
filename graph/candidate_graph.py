@@ -51,9 +51,6 @@ def get_llm():
         active_key = groq_key if groq_key else openai_key
         model_name = os.getenv("LLM_MODEL_NAME", "llama-3.3-70b-versatile")
         
-        # Fallback guard in case environmental variables default to an OpenAI target model name
-        if "gpt-" in model_name.lower():
-            model_name = "llama-3.3-70b-versatile"
             
         return ChatGroq(
             model=model_name,
