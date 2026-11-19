@@ -38,7 +38,7 @@ def get_llm(temperature: float = 0.7) -> ChatGroq:
 
     # Initialize the ChatGroq model
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",  # Best free model on Groq
+        model=os.getenv("LLM_MODEL_NAME", "llama-3.3-70b-versatile"),
         temperature=temperature,           # Creativity level
         api_key=api_key,                   # Loaded from .env
         max_tokens=2048,                   # Max response length
