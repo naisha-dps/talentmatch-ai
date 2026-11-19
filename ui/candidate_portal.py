@@ -208,7 +208,7 @@ def render_candidate_portal() -> None:
                                         ),
                                     },
                                 ],
-                                model="llama-3.3-70b-versatile",
+                                model=os.getenv("LLM_MODEL_NAME", "llama-3.3-70b-versatile"),
                             )
                             initial_question = chat_completion.choices[0].message.content.strip()
 
@@ -343,7 +343,7 @@ def render_candidate_portal() -> None:
 
                                 chat_completion = client.chat.completions.create(
                                     messages=chat_mem,
-                                    model="llama-3.3-70b-versatile",
+                                    model=os.getenv("LLM_MODEL_NAME", "llama-3.3-70b-versatile"),
                                 )
                                 next_followup_question = chat_completion.choices[0].message.content.strip()
 
